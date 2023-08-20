@@ -4,6 +4,29 @@
     grid-gap: 0px;
     width: 312px;
     margin: 0 auto;
+    margin-top: 3rem;
+}
+.timer {
+    background: url("../Img/timerBox2.png");
+    background-size: cover;
+    background-position: center;
+    width: 210px;
+    height: 37px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 17px;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin-top: 15px;
+}
+
+.title2 {
+    margin-top: 15px;
 }
 
 .tile {
@@ -15,4 +38,51 @@
     font-size: 24px;
     background-color: #ddd;
     cursor: pointer;
+}
+
+.example {
+    width: 23px;
+    height: 23px;
+    margin: 0px 5px;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-Box {
+    background: url("../Img/textBox2.png");
+    background-size: cover;
+    background-position: center;
+    width: 1150px;
+    height: 315px;
+    margin-left: 25em;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    color: #dddddd;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    overflow: hidden;
+    padding: 24px 73px;
+    box-sizing: border-box;
+}
+
+.box {
+    /*position: relative;*/
+    background-image: linear-gradient(to bottom, #61dafbaa, #356f7faa);
+    width: 100%;
+    height: 100%;
+    /*margin: 17px 0px 17px 0px;*/
+    border-radius: 13px;
+    /*z-index: -1;*/
+}
+
+.order {
+    /*position: relative;*/
+    /*z-index: 3;*/
 }

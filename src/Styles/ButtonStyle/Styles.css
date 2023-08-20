@@ -1,0 +1,25 @@
+.btn-start {
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #4395ac;
+    border-bottom: 2px solid #25515d;
+}
+
+.btn-start:hover {
+    background-color: #56bddc;
+    border-bottom: 2px solid #3f899d;
+}
+
+.btn-Skip {
+    margin-left: 170px;
+    margin-top: 33px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #4395ac;
+    border-bottom: 2px solid #25515d;
+}
