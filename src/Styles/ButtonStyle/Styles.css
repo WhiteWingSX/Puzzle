@@ -7,11 +7,6 @@
     border-bottom: 2px solid #25515d;
 }
 
-.btn-start:hover {
-    background-color: #56bddc;
-    border-bottom: 2px solid #3f899d;
-}
-
 .btn-Skip {
     margin-left: 170px;
     margin-top: 33px;
@@ -22,4 +17,30 @@
     color: #ffffff;
     background-color: #4395ac;
     border-bottom: 2px solid #25515d;
+}
+
+.btn-Reset {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #4395ac;
+    border-bottom: 2px solid #25515d;
+}
+
+.btn-start:hover {
+    background-color: #56bddc;
+    border-bottom: 2px solid #3f899d;
+}
+
+.btn-Skip:hover {
+    background-color: #56bddc;
+    border-bottom: 2px solid #3f899d;
+}
+
+.btn-Reset:hover {
+    background-color: #56bddc;
+    border-bottom: 2px solid #3f899d;
 }

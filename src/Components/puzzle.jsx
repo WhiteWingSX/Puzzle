@@ -4,10 +4,12 @@ import '../Styles/Styles.css';
 import '../Styles/PiecesStyles/Styles.css';
 import Stopwatch from './pure/timer';
 import '../Styles/ButtonStyle/Styles.css'
+import KonamiGif from './pure/KonamiCode';
 
 const exampleImg = require('./../Img/Part_16.jpg');
 const title1 = require('./../Img/titleName.png');
-const title2 = require('./../Img/titleName2.png')
+const title2 = require('./../Img/titleName2.png');
+const title3 = require('./../Img/titleName3.png');
 
 const Puzzle = () => {
     const [puzzleState, setPuzzleState] = useState([]);
@@ -87,11 +89,22 @@ const Puzzle = () => {
             {gameStarted ? (
                 isGameWon ? (
                     <>
-                        <div className="win-message">
-                            <h3>¡You Win!</h3>
-                            <h5>Do you like play again ?</h5>
+                        <div className="title">
+                            <img src={title1} alt="Title"/>
                         </div>
-                        <button onClick={resetAll}>Reset</button>
+                        <div className="title animatedFast fadeIn">
+                            <img src={title3} alt="Title2"/>
+                        </div>
+                        <div className="finish-Box animatedFast fadeIn">
+                            <div className="box2">
+                                <div className="win-message">
+                                    <h3>¡You Win!</h3>
+                                    <p>Congratulation you completed the puzzle and catch the powerfull dugtrio.</p>
+                                    <p>Do you like play again ?</p>
+                                </div>
+                                <button className="btn-Reset animatedFast fadeIn"  onClick={resetAll}>Reset Game</button>
+                                </div>
+                            </div>
                     </>
                 ) : (
                     <>
@@ -99,11 +112,11 @@ const Puzzle = () => {
                             <div>Loading...</div>
                         ) : (
                             <>
-                                <div className="title animatedFast fadeIn">
+                                <div className="title">
                                     <img src={title1} alt="Title"/>
                                 </div>
                                 <div>
-                                    <img src={title2} alt="Title"/>
+                                    <img src={title2} alt="Title animatedFast fadeIn"/>
                                 </div>
                                 <div className="puzzle animatedFast fadeIn">
                                 {puzzleState.map((value, index) => (
@@ -115,21 +128,23 @@ const Puzzle = () => {
                                     <span>Time:</span>
                                     <Stopwatch isActive={gameStarted}/>
                                 </div>
+                                    <div>
                                     <button  className="btn-Skip" onClick={() => setResetKey(resetKey + 1)}>Skip Game</button>
-                            </div>
+                                </div>
+                                </div>
                             </>
                         )}
                     </>
                 )
             ) : (
                 <>
-                <div className="title animatedFast fadeIn">
+                <div className="title">
                     <img src={title1} alt="Title"/>
                 </div>
+                    <KonamiGif/>
                 <div className="text-Box animatedFast fadeIn">
-
                     <div className="box">
-                        <h3 style={{paddingTop:'10px'}}>Dugtrio Puzzle Game</h3>
+                        <h3>Dugtrio Puzzle Game</h3>
                         <p>
                             wellcome trainer:<br/> In this game you have that complete the puzzle, for can capture a powerful pokemon.
                         </p>
@@ -137,9 +152,10 @@ const Puzzle = () => {
                             How to play:<br/> You can move the especial tile <img className="example" src={exampleImg} alt="Special Tile"/> up, down, left and right, move this for complete the puzzle.
                         </p>
                         <span>Are You Ready Trainer ?</span>
-                        <div className="order" style={{paddingTop: '10px'}}>
+                        <div style={{paddingTop: '10px'}}>
                             <button className="btn-start" onClick={() => setGameStarted(true)}>Start Game</button>
                         </div>
+
                     </div>
                 </div>
                 </>
